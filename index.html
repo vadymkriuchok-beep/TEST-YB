@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SaveNest — Coupons & Deals</title>
+<meta name="description" content="A demo coupon and deals aggregator. Placeholder content for testing only.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="/" class="logo">Save<span>Nest</span></a>
+    <nav class="nav">
+      <a href="#popular">Popular</a>
+      <a href="#categories">Categories</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <form class="search" onsubmit="return false;">
+      <input type="search" placeholder="Search stores…" aria-label="Search stores">
+      <button type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Demo site · placeholder deals</p>
+    <h1>Stop overpaying.<br>Start at <em>SaveNest</em>.</h1>
+    <p class="lede">A handpicked feed of codes and offers from made-up brands, refreshed for testing. Tap a card, copy the code, pretend to save.</p>
+    <div class="hero-strip">
+      <span class="badge">🔥 Winter Sale · up to 60% off</span>
+      <span class="badge ghost">2,400+ demo codes</span>
+    </div>
+  </div>
+</section>
+
+<section id="popular" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Popular codes</h2>
+      <p>The offers our fictional shoppers grab most.</p>
+    </div>
+    <div class="brand-grid" id="popularGrid"></div>
+  </div>
+</section>
+
+<section id="categories" class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Browse by category</h2>
+      <p>Every deal below is placeholder data for layout testing.</p>
+    </div>
+    <div class="tabs" id="tabs"></div>
+    <div class="deal-grid" id="dealGrid"></div>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="wrap narrow">
+    <div class="section-head">
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq" id="faq"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <a href="/" class="logo">Save<span>Nest</span></a>
+      <p class="fine">A demo project. All brands, codes, and stats are fictional and for testing purposes only.</p>
+    </div>
+    <form class="subscribe" onsubmit="return false;">
+      <label for="email">Get demo deals by email</label>
+      <div class="row">
+        <input id="email" type="email" placeholder="you@example.com">
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </div>
+  <div class="wrap copyright">© 2026 SaveNest (demo). Not a real store.</div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
